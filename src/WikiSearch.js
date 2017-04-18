@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 const wikiLink = 'https://en.wikipedia.org/wiki/';
 function searchWikipedia(term) {
   const cleanTerm = global.encodeURIComponent(term);
-  const url = 'http://en.wikipedia.org/w/api.php?' +
+  const url = 'https://en.wikipedia.org/w/api.php?' +
     'action=opensearch&format=json&search=' +
     cleanTerm +
     '&callback=JSONPCallback';
